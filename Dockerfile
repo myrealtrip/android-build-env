@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Kyobin Shin "b22n.thinkaholic@gmail.com"
+MAINTAINER devnull "devnull@myrealtrip.com"
 
 ENV ANDROID_HOME /usr/local/android-sdk-linux
 
