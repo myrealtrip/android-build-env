@@ -10,6 +10,7 @@ RUN apt-get update -q
 RUN apt-get install -y \
   python-software-properties \
   software-properties-common \
+  git \
   wget \
   unzip \
   --no-install-recommends
