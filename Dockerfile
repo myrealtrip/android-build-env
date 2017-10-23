@@ -38,7 +38,7 @@ RUN sdkmanager --update && yes | sdkmanager --licenses
 RUN sdkmanager "platform-tools"
 
 # android platform
-RUN sdkmanager "platforms;android-25"
+RUN sdkmanager "platforms;android-26"
 
 # android build-tools
 RUN sdkmanager "build-tools;25.0.3"
