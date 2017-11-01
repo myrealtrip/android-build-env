@@ -41,7 +41,7 @@ RUN sdkmanager "platform-tools"
 RUN sdkmanager "platforms;android-26"
 
 # android build-tools
-RUN sdkmanager "build-tools;25.0.3"
+RUN sdkmanager "build-tools;26.0.2"
 
 # android extras
 RUN sdkmanager "extras;android;m2repository"
