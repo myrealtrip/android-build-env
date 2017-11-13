@@ -52,7 +52,7 @@ RUN sdkmanager "extras;google;google_play_services"
 RUN sdkmanager "add-ons;addon-google_apis-google-23"
 
 ENV ANDROID_SDK_HOME $ANDROID_HOME
-ENV GRADLE_OPTS '-Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8"'
+ENV GRADLE_OPTS '-Dorg.gradle.jvmargs="-Xmx2g -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8"'
 
 # Clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
