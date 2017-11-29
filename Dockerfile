@@ -10,10 +10,15 @@ RUN apt-get update -q
 RUN apt-get install -y \
   python-software-properties \
   software-properties-common \
-  git \
   wget \
   unzip \
   --no-install-recommends
+
+# Install git
+RUN add-apt-repository ppa:git-core/ppa
+RUN apt-get update -q
+RUN apt-get -y install git
+RUN git --version
 
 # Install Java 8
 RUN apt-add-repository ppa:openjdk-r/ppa
